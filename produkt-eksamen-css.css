@@ -1,0 +1,108 @@
+
+/* Viewport */
+.viewport-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+
+/* Main content area */
+.container {
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+/* Overtitel */
+.overtitel {
+    color: black;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: "Franklin Gothic Medium";
+}
+
+
+/* Undertitel */
+.undertitel {
+    color: #787C7F;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    font-family: "Franklin Gothic Medium";
+}
+
+/* Knapper */
+.startside-knap {
+    display: block;
+    margin: 0 auto 40px;
+
+    width: 145px;
+    height: 52px;
+
+    border: black;
+    border-radius: 30px;
+
+    background-color: #69C45E;
+    color: white;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Franklin Gothic Medium";
+
+    line-height: 52px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.læs-op-knap {
+    display: block;
+    margin: 0 auto 40px;
+
+    width: 145px;
+    height: 52px;
+
+    border: black;
+    border-radius: 30px;
+
+    background-color: #EFD64A;
+    color: white;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Franklin Gothic Medium";
+
+    line-height: 52px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+/* Knap effects */
+.startside-knap:hover {
+    background-color: #52ad4c;
+}
+
+.læs-op-knap:hover {
+    background-color: #DBC966;
+}
