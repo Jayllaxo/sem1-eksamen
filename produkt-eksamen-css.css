@@ -32,21 +32,66 @@ body {
     align-items: center;
 }
 
+.container-flashcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    text-align: center;
+
+    margin: 80px auto;
+
+    width: 1200px;
+    height: 700px;
+
+    border: 1px solid lightgray;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.container-flashcard-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 800px;
+    margin-right: 800px;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    color: black;
+}
 
 /* Tekst Designs */
 .overtitel {
     color: black;
-    font-size: 50px;
+    font-size: 62px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .undertitel {
     color: #787C7F;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.3;
     margin-bottom: 40px;
+}
+
+
+/* Image Design */
+.image-redesign {
+    transform: scale(0.8);
+    border: black solid 0.2px;
 }
 
 
@@ -123,6 +168,17 @@ body {
     cursor: pointer;
 }
 
+.flashcard-back-knap {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+
+    font-size: 40px;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
 .answer {
     display: block;
     align-content: center;
@@ -173,6 +229,16 @@ body {
 
 
 /* Knap effects */
+
+.flashcard-back-knap:hover {
+    color: #787C7F;
+    transform: scale(1.2);
+}
+
+.container-flashcard:hover {
+    transform: scale(1.02);
+}
+
 .grøn-knap:hover {
     background-color: #52ad4c;
 }
