@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="produkt-eksamen-css.css">
+  <title>Quiz</title>
+</head>
+<body>
+
+<p>
+  <a href="quiz-startside.html" class="tilbage-knap">←</a>
+</p>
+
+<div class="container">
+
+  <div id="quiz-screen">
+    <p id="question" class="overtitel"></p>
+
+    <div id="answers">
+      <button class="answer" data-option="A"></button>
+      <button class="answer" data-option="B"></button>
+      <button class="answer" data-option="C"></button>
+      <button class="answer" data-option="D"></button>
+    </div>
+
+    <button id="next-btn">Næste</button>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <p class="overtitel">Dit resultat</p>
+    <p class="undertitel" id="score-text"></p>
+    <button id="next-btn" onclick="location.reload()">Prøv igen?</button>
+  </div>
+
+</div>
+
+<script src="script-til-funktioner.js"></script>
+</body>
+</html>

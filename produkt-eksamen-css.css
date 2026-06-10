@@ -33,16 +33,14 @@ body {
 }
 
 
-/* Overtitel */
+/* Tekst Designs */
 .overtitel {
     color: black;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-
-/* Undertitel */
 .undertitel {
     color: #787C7F;
     font-size: 25px;
@@ -50,6 +48,7 @@ body {
     line-height: 1.3;
     margin-bottom: 40px;
 }
+
 
 /* Knapper */
 .grøn-knap {
@@ -73,6 +72,7 @@ body {
     line-height: 52px;
     text-align: center;
 
+    transition: 0.2s;
     cursor: pointer;
 }
 
@@ -97,6 +97,7 @@ body {
     line-height: 52px;
     text-align: center;
 
+    transition: 0.2s;
     cursor: pointer;
 }
 
@@ -118,8 +119,58 @@ body {
     text-align: center;
     line-height: 40px;
 
+    transition: 0.2s;
     cursor: pointer;
 }
+
+.answer {
+    display: block;
+    align-content: center;
+    width: 50%;
+
+    margin: 10px 0;
+    padding: 10px;
+
+    border: none;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+
+    font-size: 20px;
+    text-align: center;
+    font-family: "Franklin Gothic Medium";
+    color: white;
+    background: #EFD64A;
+
+    transition: 0.2s;
+    cursor: pointer
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#next-btn {
+    font-family: "Franklin Gothic Medium";
+    color: white;
+    background-color: #4F98CA;
+
+    font-size: 20px;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 30px;
+
+    width: 120px;
+    margin-top: 30px;
+    padding: 12px;
+
+    transition: 0.2s;
+    cursor: pointer
+}
+
 
 /* Knap effects */
 .grøn-knap:hover {
@@ -132,4 +183,28 @@ body {
 
 .tilbage-knap:hover {
     background-color: #578DB2;
+}
+
+.answer:hover {
+    background: #DBC966;
+}
+
+#next-btn:hover {
+    background: #578DB2;
+}
+
+.correct {
+    background: green !important;
+    color: white;
+}
+
+.wrong {
+    background: red !important;
+    color: white;
+}
+
+/* Script CSS */
+
+.hidden {
+    display: none;
 }
