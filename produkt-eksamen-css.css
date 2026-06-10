@@ -1,31 +1,35 @@
 
-/* Viewport */
+/* Viewport match user */
 .viewport-container {
     width: 100vw;
     height: 100vh;
 }
 
 
-/* Removes default browser spacing */
+/* Fjern browser automatisk spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* Gør baggrund hvid på alle 'body'*/
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: white;
+    font-family: "Franklin Gothic Medium";
 }
 
 
-/* Main content area */
+/* Container boxes */
 .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -35,7 +39,6 @@ body {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
-    font-family: "Franklin Gothic Medium";
 }
 
 
@@ -46,11 +49,10 @@ body {
     font-weight: 600;
     line-height: 1.3;
     margin-bottom: 40px;
-    font-family: "Franklin Gothic Medium";
 }
 
 /* Knapper */
-.startside-knap {
+.grøn-knap {
     display: block;
     margin: 0 auto 40px;
 
@@ -74,7 +76,7 @@ body {
     cursor: pointer;
 }
 
-.læs-op-knap {
+.gul-knap {
     display: block;
     margin: 0 auto 40px;
 
@@ -98,11 +100,36 @@ body {
     cursor: pointer;
 }
 
+.tilbage-knap {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    width: 90px;
+    height: 50px;
+
+    background-color: #4F98CA;
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 48px;
+    text-align: center;
+    line-height: 40px;
+
+    cursor: pointer;
+}
+
 /* Knap effects */
-.startside-knap:hover {
+.grøn-knap:hover {
     background-color: #52ad4c;
 }
 
-.læs-op-knap:hover {
+.gul-knap:hover {
     background-color: #DBC966;
+}
+
+.tilbage-knap:hover {
+    background-color: #578DB2;
 }
