@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script-til-funktioner.js" defer></script>
     <link rel="stylesheet" href="produkt-eksamen-css.css">
     <title>Vælg mellem at læse op eller teste din viden</title>
 </head>
 <body>
+
+<button onclick="toggleColorblind()" class="colorblind-knap">
+    Farveblind Tilstand
+</button>
 
 <div class="container">
     <div>
@@ -14,8 +19,8 @@
         <p class="overtitel">Brugertestene i Multimediedesign</p>
 
         <p class="undertitel">
-            Test din viden med en quiz og flashcards og/eller<br>
-            klik på “Læs op” for at læse op på brugertestene.
+            Test din viden om brugertestene med en quiz og flashcards og/eller<br>
+            klik på “Læs op” for at læse kort om brugertestene og øve dig med en tjekliste guide.
         </p>
 
         <a href="test-din-viden.html" class="grøn-knap">Test din viden</a>

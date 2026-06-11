@@ -1,3 +1,19 @@
+/* Colorblind Mode */
+// Load colorblind mode immediately
+if (localStorage.getItem("colorblindMode") === "true") {
+    document.body.classList.add("colorblind");
+}
+
+function toggleColorblind() {
+    document.body.classList.toggle("colorblind");
+
+    localStorage.setItem(
+        "colorblindMode",
+        document.body.classList.contains("colorblind")
+    );
+}
+
+/* Quiz kode */
 const questions = [
     {
         question: "Hvad har Gangster-testen\n" +
@@ -131,3 +147,4 @@ function showResults() {
 
 // start
 loadQuestion();
+

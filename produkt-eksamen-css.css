@@ -1,4 +1,29 @@
 
+
+/* Root colors */
+:root {
+    --tekst-grey: #787C7F;
+    --button-grøn: #69C45E;
+    --button-gul: #EFD64A;
+    --button-blå: #4F98CA;
+    --button-effekt-grøn: #52ad4c;
+    --button-effekt-gul: #DBC966;
+    --button-effekt-blå: #578DB2;
+}
+
+
+/* Colorblind colors */
+.colorblind {
+    --tekst-grey: #000000;
+    --button-grøn: #000000;
+    --button-gul: #000000;
+    --button-blå: #000000;
+    --button-effekt-grøn: #787C7F;
+    --button-effekt-gul: #787C7F;
+    --button-effekt-blå: #787C7F;
+}
+
+
 /* Viewport match user */
 .viewport-container {
     width: 100vw;
@@ -80,7 +105,7 @@ body {
 }
 
 .undertitel {
-    color: #787C7F;
+    color: var(--tekst-grey);
     font-size: 22px;
     font-weight: 600;
     line-height: 1.3;
@@ -106,7 +131,7 @@ body {
     border: black;
     border-radius: 30px;
 
-    background-color: #69C45E;
+    background-color: var(--button-grøn);
     color: white;
 
     text-decoration: none;
@@ -131,7 +156,7 @@ body {
     border: black;
     border-radius: 30px;
 
-    background-color: #EFD64A;
+    background-color: var(--button-gul);
     color: white;
 
     text-decoration: none;
@@ -154,7 +179,7 @@ body {
     width: 90px;
     height: 50px;
 
-    background-color: #4F98CA;
+    background-color: var(--button-blå);
     color: white;
 
     border-radius: 30px;
@@ -163,6 +188,29 @@ body {
     font-size: 48px;
     text-align: center;
     line-height: 40px;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.colorblind-knap {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 70px;
+    height: 40px;
+
+    opacity: 75%;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
 
     transition: 0.2s;
     cursor: pointer;
@@ -195,7 +243,7 @@ body {
     text-align: center;
     font-family: "Franklin Gothic Medium";
     color: white;
-    background: #EFD64A;
+    background-color: var(--button-gul);
 
     transition: 0.2s;
     cursor: pointer
@@ -211,7 +259,7 @@ body {
 #next-btn {
     font-family: "Franklin Gothic Medium";
     color: white;
-    background-color: #4F98CA;
+    background-color: #787c7f;
 
     font-size: 20px;
     text-decoration: none;
@@ -240,27 +288,52 @@ body {
 }
 
 .grøn-knap:hover {
-    background-color: #52ad4c;
+    background-color: var(--button-effekt-grøn);
+}
+
+.grøn-knap:active {
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 1);
+    transition: 10ms;
 }
 
 .gul-knap:hover {
-    background-color: #DBC966;
+    background-color: var(--button-effekt-gul)
+}
+
+.gul-knap:active {
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 1);
+    transition: 10ms;
 }
 
 .tilbage-knap:hover {
-    background-color: #578DB2;
+    background-color: var(--button-effekt-blå)
+}
+
+.tilbage-knap:active {
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 1);
+    transition: 10ms;
 }
 
 .answer:hover {
-    background: #DBC966;
+    background: var(--button-effekt-gul);
+}
+
+.answer:active {
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 1);
+    transition: 10ms;
 }
 
 #next-btn:hover {
-    background: #578DB2;
+    background: var(--button-effekt-blå);
+}
+
+#next-btn:active {
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 1);
+    transition: 10ms;
 }
 
 .correct {
-    background: green !important;
+    background: #69C45E !important;
     color: white;
 }
 
