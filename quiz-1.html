@@ -9,18 +9,16 @@
 </head>
 <body>
 
-<button onclick="toggleColorblind()" class="colorblind-knap">
-  Farveblind Tilstand
-</button>
-
-<p>
+<div>
+  <button onclick="toggleColorblind()" class="colorblind-knap">
+    Farveblind Tilstand
+  </button>
   <a href="quiz-startside.html" class="tilbage-knap">←</a>
-</p>
+</div>
 
 <div class="container">
-
   <div id="quiz-screen">
-    <p id="question" class="overtitel"></p>
+    <h1 id="question" class="overtitel"></h1>
 
     <div id="answers">
       <button class="answer" data-option="A"></button>
@@ -37,7 +35,6 @@
     <p class="undertitel" id="score-text"></p>
     <button id="next-btn" onclick="location.reload()">Prøv igen?</button>
   </div>
-
 </div>
 
 </body>
